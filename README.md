@@ -1,5 +1,6 @@
 # IPL Score Prediction Web-App 
-[Live Link] https://knowiplscore.streamlit.app/
+[Live Link] (https://knowiplscore.streamlit.app/)   
+[Colab Notebook] (https://colab.research.google.com/drive/1Lctq2eHBAh1qXoqMLeT98TfhoNV322Ja#scrollTo=SfDDg1txjRv2)
 
 This repository contains an IPL Score Prediction Web-App built with Python. It allows users to predict the final score of an Indian Premier League (IPL) cricket match based on match and team statistics. The project leverages machine learning techniques to provide real-time score predictions with an easy-to-use web interface.
 
