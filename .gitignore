@@ -1,0 +1,167 @@
+############################
+# Core Python
+############################
+__pycache__/
+*.py[cod]
+*$py.class
+
+############################
+# Virtual Environments (choose what you use)
+############################
+.venv/
+venv/
+env/
+ENV/
+.pythonenv/
+pip-wheel-metadata/
+pip-log.txt
+
+# Poetry / Pipenv
+poetry.lock
+# If you DO want to track lock files for reproducibility, remove the above.
+Pipfile.lock
+
+############################
+# Build / Packaging Artifacts
+############################
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+*.whl
+MANIFEST
+*.manifest
+*.spec  # PyInstaller spec files (ignore if auto-generated)
+
+############################
+# C Extensions
+############################
+*.so
+*.pyd
+*.dll
+*.dylib
+
+############################
+# Notebook Stuff
+############################
+.ipynb_checkpoints/
+# Jupyter runtime
+.jupyter/
+.profile.d/
+
+############################
+# Logs / Reports / Coverage
+############################
+logs/
+*.log
+coverage.*
+htmlcov/
+.cache/
+pytest_cache/
+.tox/
+.nox/
+.mypy_cache/
+.pytype/
+.pyre/
+.dmypy.json
+.prof
+*.prof
+
+############################
+# Type Checker / Lint Tools
+############################
+.pyright/
+ruff_cache/
+.mutmut-cache/
+
+############################
+# Environment / Secrets
+############################
+# Keep example template(s) for onboarding
+*.env
+*.env.*
+!.env.example
+secrets.json
+credentials.json
+
+############################
+# Data / ML Artifacts
+############################
+# Adjust: keep only small sample data tracked
+data/raw/
+data/interim/
+data/tmp/
+datasets/
+# Keep a README so the dirs exist logically
+!data/README.md
+
+# Model artifacts / checkpoints
+models/
+checkpoints/
+outputs/
+runs/
+mlruns/
+wandb/
+tensorboard/
+tb_logs/
+
+# Common model file extensions
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.joblib
+*.pkl
+*.pickle
+
+############################
+# Caches from Common Libs
+############################
+.dvc/tmp/
+.dvc/cache/
+# If using DVC, you usually DO track .dvc/config (not ignored)
+
+############################
+# Packaging / Build Systems
+############################
+# Hatch / PDM / others (uncomment as needed)
+# .pdm-build/
+
+############################
+# Editor / IDE
+############################
+# JetBrains
+.idea/
+# VS Code
+.vscode/
+# Others
+*.swp
+*.swo
+*.kate-swp
+
+############################
+# System Files
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Temporary / Scratch
+############################
+tmp/
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+
+############################
+# HTTP client scratch (JetBrains)
+############################
+httpRequests/
+
+############################
+# Optional: If you adopt Git LFS, remove model/data binary patterns above
+# and use .gitattributes instead.
+############################
