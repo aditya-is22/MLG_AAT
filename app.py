@@ -3,14 +3,19 @@ import pickle
 import math
 import numpy as np
 
-# Load models and components
-with open('ipl_models.pkl', 'rb') as f:
-    components = pickle.load(f)
-    models = components['models']
-    pca = components['pca']
-    scaler = components['scaler']
-    results = components['results']
+@st.cache_resource
+def load_ipl_models():
+    with open('ipl_models.pkl', 'rb') as f:
+        components = pickle.load(f)
+    return (
+        components['models'],
+        components['pca'],
+        components['scaler'],
+        components['results']
+    )
 
+# Load models and components once and reuse
+models, pca, scaler, results = load_ipl_models()
 # Page config
 st.set_page_config(page_title='IPL Score Predictor', layout="centered")
 
