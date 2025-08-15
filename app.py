@@ -2,18 +2,6 @@ import streamlit as st
 import pickle
 import math
 import numpy as np
-import zipfile
-import os
-
-# Unzip the file
-zip_file_path = 'ipl_models.zip'
-extract_path = './'
-pkl_file_name = 'ipl_models.pkl'
-
-if os.path.exists(zip_file_path):
-    with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
-        zip_ref.extractall(extract_path)
-
 
 # Load models and components
 with open('ipl_models.pkl', 'rb') as f:
