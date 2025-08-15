@@ -3,6 +3,9 @@ import pickle
 import math
 import numpy as np
 
+# Page config
+st.set_page_config(page_title='IPL Score Predictor', layout="centered")
+
 @st.cache_resource
 def load_ipl_models():
     with open('ipl_models.pkl', 'rb') as f:
@@ -16,8 +19,7 @@ def load_ipl_models():
 
 # Load models and components once and reuse
 models, pca, scaler, results = load_ipl_models()
-# Page config
-st.set_page_config(page_title='IPL Score Predictor', layout="centered")
+
 
 # Title and styling
 st.markdown("""
